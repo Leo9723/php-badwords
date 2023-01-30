@@ -1,6 +1,7 @@
 <?php
     $paragraph = $_POST['paragraph'];
     $hiddenWord = $_POST['hidden'];
+    $newParagraph = str_replace($hiddenWord, '***', $paragraph)
 
 ?>
 
@@ -14,6 +15,6 @@
 </head>
 <body>
     <h2>Paragrafo: <?php echo $paragraph ?></br> Lunghezza paragrafo: <?php echo strlen($paragraph) ?></h2>
-    <h2>Paragrafo: <?php echo str_replace($hiddenWord, '***', $paragraph) ?></br> Lunghezza paragrafo: <?php echo strlen($paragraph) ?></h2>
+    <h2>Paragrafo: <?php echo $newParagraph ?></br> Lunghezza paragrafo: <?php echo strlen($newParagraph) ?></h2>
 </body>
 </html>
